@@ -1,28 +1,68 @@
-# MathTech Web
+# MathTech Web 🚀
 
-Projeto desenvolvido para a disciplina Web Design.
+![MathTech](img/capa-mathtech.jpg)
 
-## Sobre o projeto
+## Matemática Aplicada à Informática
 
-O MathTech Web apresenta conceitos de Matemática Aplicada à Informática,
-com foco em sistemas de numeração e fundamentos utilizados na computação.
+O MathTech Web é um projeto educacional desenvolvido para a disciplina **Web Design**, do curso Técnico em Desenvolvimento de Sistemas.
 
-## Tecnologias utilizadas
+A aplicação apresenta conceitos matemáticos fundamentais utilizados na computação, especialmente sistemas de numeração e suas aplicações na área de tecnologia.
 
-- HTML5
-- CSS3
+---
 
-## Estrutura do projeto
+# Objetivo do projeto
 
-- index.html
-- sobre.html
-- sistemas.html
-- cadastro.html
-- css/
-- img/
+O projeto busca integrar:
 
-## Autor
+- Design de interfaces;
+- Inteligência Artificial;
+- Engenharia de Prompt;
+- Desenvolvimento Web;
+- Controle de versão.
 
-Cosme Vinicius
+---
 
-Ano: 2026
+# Processo de desenvolvimento
+
+## 1. Prototipação no Figma 🎨
+
+Inicialmente foi desenvolvido um protótipo visual utilizando o Figma.
+
+Nesta etapa foram definidos:
+
+- identidade visual;
+- organização das páginas;
+- hierarquia dos conteúdos;
+- experiência do usuário (UX);
+- elementos gráficos.
+
+O protótipo serviu como base para a construção da aplicação.
+
+---
+
+## 2. Desenvolvimento utilizando Lovable e Inteligência Artificial 🤖
+
+Após a criação do protótipo, a aplicação foi desenvolvida utilizando a plataforma Lovable.
+
+A Engenharia de Prompt foi utilizada para orientar a Inteligência Artificial, definindo:
+
+- contexto do projeto;
+- objetivos;
+- funcionalidades;
+- estrutura visual;
+- requisitos técnicos.
+
+Aplicação desenvolvida:
+
+https://mathtechmatematicaplicadainformtica.lovable.app
+
+---
+
+## 3. Desenvolvimento Web HTML5 e CSS3 💻
+
+Para a disciplina Web Design, o projeto foi adaptado para uma estrutura tradicional utilizando:
+
+- HTML5;
+- CSS3.
+
+Estrutura do projeto:
