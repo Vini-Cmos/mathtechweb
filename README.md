@@ -66,3 +66,25 @@ Para a disciplina Web Design, o projeto foi adaptado para uma estrutura tradicio
 - CSS3.
 
 Estrutura do projeto:
+
+---
+
+# Evolução do Projeto - Atividade Avaliativa 5 (HTML5 e CSS3)
+
+Nesta etapa do projeto, o MathTech Web foi desenvolvido utilizando HTML5 e CSS3, seguindo o modelo visual projetado anteriormente.
+
+Foram aplicados novos conceitos apresentados na disciplina Web Design:
+
+- Navegação entre páginas;
+- Utilização de elementos multimídia;
+- Formulários HTML5;
+- Organização da estrutura de arquivos;
+- Melhorias visuais utilizando CSS3;
+- Responsividade.
+
+Novas páginas implementadas:
+
+- **multimidia.html** - página destinada à apresentação de conteúdos em vídeo relacionados aos temas estudados;
+- **quiz.html** - página interativa utilizando elementos de formulário HTML5 para avaliação dos conhecimentos.
+
+A versão HTML5/CSS3 mantém o objetivo principal do MathTech Web: apresentar conceitos matemáticos aplicados à informática, especialmente sistemas de numeração utilizados na computação.
