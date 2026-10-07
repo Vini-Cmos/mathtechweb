@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Sistemas de Numeração</title>
-<link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas de Numeração | MathTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-<header><h1>Sistemas de Numeração</h1></header>
-
-<nav>
-<a href="index.html">Início</a>
-<a href="multimidia.html">Multimídia</a>
-<a href="quiz.html">Quiz</a>
-</nav>
-
-<section class="conteudo">
-<table>
-<tr><th>Sistema</th><th>Base</th></tr>
-<tr><td>Binário</td><td>2</td></tr>
-<tr><td>Decimal</td><td>10</td></tr>
-<tr><td>Octal</td><td>8</td></tr>
-<tr><td>Hexadecimal</td><td>16</td></tr>
-</table>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">∑</span>
+      <span class="brand-text">MathTech<small>Matemática &amp; Informática</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Projeto</a>
+      <a class="active" href="sistemas.html">Sistemas</a>
+      <a href="multimidia.html">Multimídia</a>
+      <a href="interlab.html">Inter-Lab</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="container">
+    <span class="kicker">Fundamentos da computação</span>
+    <h1>Sistemas de Numeração</h1>
+    <p>Os sistemas de numeração representam quantidades por meio de símbolos e regras. Na computação, diferentes bases são utilizadas para representar e organizar dados.</p>
+  </div>
 </section>
+<main class="section">
+  <div class="container">
+    <div class="grid-4">
+      <article class="card system-card"><span class="base">Base 10</span><h2>Decimal</h2><p>Utiliza os algarismos de 0 a 9 e é o sistema mais comum no cotidiano.</p></article>
+      <article class="card system-card"><span class="base">Base 2</span><h2>Binário</h2><p>Utiliza apenas 0 e 1 e é fundamental para a representação interna de dados.</p></article>
+      <article class="card system-card"><span class="base">Base 8</span><h2>Octal</h2><p>Utiliza os algarismos de 0 a 7 e pode representar grupos de bits de forma compacta.</p></article>
+      <article class="card system-card"><span class="base">Base 16</span><h2>Hexadecimal</h2><p>Utiliza 0 a 9 e A a F, sendo muito usado em programação e representação de dados.</p></article>
+    </div>
 
+    <section class="section">
+      <div class="card program-table-wrap">
+        <h2>Comparação entre os sistemas</h2>
+        <table>
+          <thead><tr><th>Sistema</th><th>Base</th><th>Símbolos</th><th>Exemplo</th><th>Aplicação</th></tr></thead>
+          <tbody>
+            <tr><td>Decimal</td><td>10</td><td>0 a 9</td><td>26₁₀</td><td>Uso cotidiano</td></tr>
+            <tr><td>Binário</td><td>2</td><td>0 e 1</td><td>11010₂</td><td>Computação e circuitos digitais</td></tr>
+            <tr><td>Octal</td><td>8</td><td>0 a 7</td><td>32₈</td><td>Representação compacta de valores binários</td></tr>
+            <tr><td>Hexadecimal</td><td>16</td><td>0 a 9 e A a F</td><td>1A₁₆</td><td>Programação, memória e cores digitais</td></tr>
+          </tbody>
+        </table>
+        <div class="note">No Inter-Lab você pode informar um número decimal e visualizar sua conversão para binário, octal e hexadecimal.</div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <strong>MathTech</strong>
+    <span>Desenvolvido por Cosme Vinicius — 2026</span>
+  </div>
+</footer>
 </body>
 </html>
