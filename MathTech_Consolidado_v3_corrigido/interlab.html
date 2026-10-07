@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inter-Lab | MathTech</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">∑</span>
+      <span class="brand-text">MathTech<small>Matemática &amp; Informática</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Projeto</a>
+      <a href="sistemas.html">Sistemas</a>
+      <a href="multimidia.html">Multimídia</a>
+      <a class="active" href="interlab.html">Inter-Lab</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="container">
+    <span class="kicker">Seção 4</span>
+    <h1>Laboratório interativo</h1>
+    <p>Três ferramentas para praticar diretamente no navegador.</p>
+  </div>
+</section>
+
+<main class="section">
+  <div class="container">
+    <section class="lab-grid">
+      <article class="card">
+        <h2>Conversor de Sistemas Numéricos</h2>
+        <p>Informe um número decimal e veja sua representação em outras bases.</p>
+        <label for="decimalInput">Número decimal</label>
+        <input id="decimalInput" type="number" min="0" step="1" placeholder="Ex.: 2026">
+        <div class="actions">
+          <button class="btn btn-primary" id="convertBtn" type="button">Converter</button>
+          <button class="btn btn-outline" id="clearBtn" type="button">Limpar</button>
+        </div>
+        <div class="results-grid" aria-live="polite">
+          <div class="result-box"><span>Decimal</span><strong id="decResult">–</strong></div>
+          <div class="result-box"><span>Binário</span><strong id="binResult">–</strong></div>
+          <div class="result-box"><span>Octal</span><strong id="octResult">–</strong></div>
+          <div class="result-box"><span>Hexadecimal</span><strong id="hexResult">–</strong></div>
+        </div>
+        <div class="feedback" id="converterMessage"></div>
+      </article>
+
+      <article class="card">
+        <h2>Demonstração de Lógica Matemática</h2>
+        <p>Altere os valores das proposições e observe o resultado das operações lógicas.</p>
+        <div class="logic-switches">
+          <div class="prop-box">
+            <span>Proposição P</span><span id="pStatus" class="status true">Verdadeiro</span>
+            <label class="switch" aria-label="Alternar proposição P"><input id="pSwitch" type="checkbox" checked><span class="slider"></span></label>
+          </div>
+          <div class="prop-box">
+            <span>Proposição Q</span><span id="qStatus" class="status false">Falso</span>
+            <label class="switch" aria-label="Alternar proposição Q"><input id="qSwitch" type="checkbox"><span class="slider"></span></label>
+          </div>
+        </div>
+        <div class="program-table-wrap">
+          <table>
+            <thead><tr><th>Operação</th><th>Resultado</th></tr></thead>
+            <tbody>
+              <tr><td>P E Q (AND)</td><td><span id="andResult" class="status false">Falso</span></td></tr>
+              <tr><td>P OU Q (OR)</td><td><span id="orResult" class="status true">Verdadeiro</span></td></tr>
+              <tr><td>NÃO P (NOT)</td><td><span id="notResult" class="status false">Falso</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="card section">
+      <h2>Quiz rápido</h2>
+      <p>Cinco perguntas sobre os conteúdos apresentados no projeto.</p>
+      <form id="quizForm">
+        <div class="quiz-question" data-answer="binario">
+          <p>1. Qual sistema de numeração utiliza apenas 0 e 1?</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="q1" value="decimal"> Decimal</label>
+            <label class="option"><input type="radio" name="q1" value="binario"> Binário</label>
+            <label class="option"><input type="radio" name="q1" value="octal"> Octal</label>
+            <label class="option"><input type="radio" name="q1" value="hexadecimal"> Hexadecimal</label>
+          </div>
+        </div>
+        <div class="quiz-question" data-answer="logica">
+          <p>2. Qual área trabalha com proposições verdadeiras ou falsas?</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="q2" value="logica"> Lógica Matemática</label>
+            <label class="option"><input type="radio" name="q2" value="combinatoria"> Combinatória</label>
+            <label class="option"><input type="radio" name="q2" value="numericos"> Métodos Numéricos</label>
+            <label class="option"><input type="radio" name="q2" value="geometria"> Geometria</label>
+          </div>
+        </div>
+        <div class="quiz-question" data-answer="pi">
+          <p>3. Qual símbolo matemático representa aproximadamente 3,14159?</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="q3" value="sigma"> Σ</label>
+            <label class="option"><input type="radio" name="q3" value="delta"> Δ</label>
+            <label class="option"><input type="radio" name="q3" value="pi"> π</label>
+            <label class="option"><input type="radio" name="q3" value="infinito"> ∞</label>
+          </div>
+        </div>
+        <div class="quiz-question" data-answer="conjuntos">
+          <p>4. Diagramas de Venn são utilizados principalmente em qual conteúdo?</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="q4" value="conjuntos"> Teoria dos Conjuntos</label>
+            <label class="option"><input type="radio" name="q4" value="sistemas"> Sistemas de Numeração</label>
+            <label class="option"><input type="radio" name="q4" value="interpolacao"> Interpolação</label>
+            <label class="option"><input type="radio" name="q4" value="criptografia"> Criptografia</label>
+          </div>
+        </div>
+        <div class="quiz-question" data-answer="possibilidades">
+          <p>5. A análise combinatória está relacionada principalmente a quê?</p>
+          <div class="options">
+            <label class="option"><input type="radio" name="q5" value="possibilidades"> Possibilidades e combinações</label>
+            <label class="option"><input type="radio" name="q5" value="bases"> Conversão de bases</label>
+            <label class="option"><input type="radio" name="q5" value="raizes"> Aproximação de raízes</label>
+            <label class="option"><input type="radio" name="q5" value="verdade"> Tabelas-verdade</label>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Ver resultado</button>
+          <button class="btn btn-outline" id="resetQuizBtn" type="button">Refazer quiz</button>
+        </div>
+        <div class="feedback" id="quizMessage">Responda as 5 questões para conferir.</div>
+      </form>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <strong>MathTech</strong>
+    <span>Desenvolvido por Cosme Vinicius — 2026</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const input=document.getElementById('decimalInput');
+  const msg=document.getElementById('converterMessage');
+  function resetConv(){
+    input.value='';
+    ['decResult','binResult','octResult','hexResult'].forEach(id=>document.getElementById(id).textContent='–');
+    msg.textContent='';
+  }
+  function convert(){
+    const raw=input.value.trim();
+    if(raw===''){msg.textContent='Informe um número decimal inteiro.';return;}
+    const n=Number(raw);
+    if(!Number.isSafeInteger(n)||n<0){msg.textContent='Digite um número inteiro positivo válido.';return;}
+    document.getElementById('decResult').textContent=n.toString(10);
+    document.getElementById('binResult').textContent=n.toString(2);
+    document.getElementById('octResult').textContent=n.toString(8);
+    document.getElementById('hexResult').textContent=n.toString(16).toUpperCase();
+    msg.textContent='Conversão realizada com sucesso.';
+  }
+  document.getElementById('convertBtn').addEventListener('click',convert);
+  document.getElementById('clearBtn').addEventListener('click',resetConv);
+  input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();convert();}});
+
+  const p=document.getElementById('pSwitch'), q=document.getElementById('qSwitch');
+  function setStatus(el,v){el.textContent=v?'Verdadeiro':'Falso';el.className='status '+(v?'true':'false');}
+  function updateLogic(){
+    setStatus(document.getElementById('pStatus'),p.checked);
+    setStatus(document.getElementById('qStatus'),q.checked);
+    setStatus(document.getElementById('andResult'),p.checked&&q.checked);
+    setStatus(document.getElementById('orResult'),p.checked||q.checked);
+    setStatus(document.getElementById('notResult'),!p.checked);
+  }
+  p.addEventListener('change',updateLogic);q.addEventListener('change',updateLogic);updateLogic();
+
+  const form=document.getElementById('quizForm'), quizMsg=document.getElementById('quizMessage');
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    let score=0, answered=0;
+    form.querySelectorAll('.quiz-question').forEach(qEl=>{
+      const selected=qEl.querySelector('input:checked');
+      qEl.querySelectorAll('.option').forEach(o=>o.classList.remove('correct','wrong'));
+      if(!selected)return;
+      answered++;
+      if(selected.value===qEl.dataset.answer){score++;selected.closest('.option').classList.add('correct');}
+      else{
+        selected.closest('.option').classList.add('wrong');
+        const right=qEl.querySelector('input[value="'+qEl.dataset.answer+'"]');
+        if(right)right.closest('.option').classList.add('correct');
+      }
+    });
+    if(answered<5){quizMsg.textContent='Responda todas as 5 questões antes de conferir.';return;}
+    quizMsg.textContent='Pontuação: '+score+'/5. '+(score===5?'Excelente! Você acertou todas.':score>=3?'Muito bom! Revise os itens destacados.':'Continue praticando. As respostas corretas foram destacadas.');
+  });
+  document.getElementById('resetQuizBtn').addEventListener('click',()=>{
+    form.reset();
+    form.querySelectorAll('.option').forEach(o=>o.classList.remove('correct','wrong'));
+    quizMsg.textContent='Responda as 5 questões para conferir.';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathTech | Matemática Aplicada à Informática</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">∑</span>
+      <span class="brand-text">MathTech<small>Matemática &amp; Informática</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="active" href="index.html">Início</a>
+      <a href="sobre.html">Projeto</a>
+      <a href="sistemas.html">Sistemas</a>
+      <a href="multimidia.html">Multimídia</a>
+      <a href="interlab.html">Inter-Lab</a>
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero-home">
+    <div class="container">
+      <span class="kicker">Projeto acadêmico · Informática</span>
+      <h1>Matemática Aplicada à Informática</h1>
+      <p>Entenda como os fundamentos matemáticos estão presentes nos algoritmos, na programação, na inteligência artificial, na criptografia e no processamento de dados.</p>
+      <div class="hero-actions">
+        <a class="btn btn-cyan" href="#conteudos">Explorar conteúdos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="conteudos">
+    <div class="container">
+      <span class="kicker">Seção 1</span>
+      <h2 class="section-title">O que é Matemática Aplicada à Informática</h2>
+      <p class="section-intro">A matemática fornece bases para sistemas computacionais, algoritmos, segurança, inteligência artificial e análise de dados.</p>
+      <div class="grid-4">
+        <article class="card topic-card"><strong>Algoritmos</strong><p>Raciocínio lógico e estruturas para resolver problemas computacionais.</p></article>
+        <article class="card topic-card"><strong>Inteligência Artificial</strong><p>Probabilidade, estatística, álgebra e cálculo em modelos computacionais.</p></article>
+        <article class="card topic-card"><strong>Criptografia</strong><p>Operações matemáticas aplicadas à proteção de informações digitais.</p></article>
+        <article class="card topic-card"><strong>Programação</strong><p>Lógica matemática aplicada a condições, decisões e estruturas de código.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="kicker">Seção 2</span>
+      <h2 class="section-title">Tópicos da disciplina</h2>
+      <p class="section-intro">Os principais eixos de estudo do projeto MathTech.</p>
+      <div class="grid-3">
+        <article class="card"><h3>Sistemas de Numeração</h3><p>Binário, Decimal, Octal e Hexadecimal.</p></article>
+        <article class="card"><h3>Lógica Matemática</h3><p>Proposições e tabelas-verdade.</p></article>
+        <article class="card"><h3>Teoria dos Conjuntos</h3><p>Operações e Diagramas de Venn.</p></article>
+        <article class="card"><h3>Combinatória</h3><p>Possibilidades, combinações e permutações.</p></article>
+        <article class="card"><h3>Métodos Numéricos</h3><p>Aproximação e interpolação.</p></article>
+        <article class="card"><h3>Inter-Lab</h3><p>Conversor, lógica matemática e quiz funcional.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="kicker">Seção 3</span>
+      <h2 class="section-title">Conteúdo programático</h2>
+      <p class="section-intro">Organização dos conteúdos ao longo dos quatro bimestres.</p>
+      <div class="card program-table-wrap">
+        <table>
+          <thead><tr><th>Bimestre</th><th>Conteúdo</th><th>Destaque</th></tr></thead>
+          <tbody>
+            <tr><td>1º Bimestre</td><td>Sistemas de Numeração</td><td>Conversão</td></tr>
+            <tr><td>2º Bimestre</td><td>Lógica Matemática</td><td>Tabelas-Verdade</td></tr>
+            <tr><td>3º Bimestre</td><td>Teoria dos Conjuntos</td><td>Conjuntos</td></tr>
+            <tr><td>4º Bimestre</td><td>Combinatória e Métodos Numéricos</td><td>Aplicações</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <article class="card">
+        <span class="kicker">Seção 4</span>
+        <h2>Laboratório interativo</h2>
+        <p>Pratique conversão de bases, lógica matemática e responda ao quiz.</p>
+        <a class="btn btn-primary" href="interlab.html">Acessar Inter-Lab</a>
+      </article>
+      <article class="card">
+        <span class="kicker">Seção 5</span>
+        <h2>Série em vídeo</h2>
+        <p>Visualize a capa da série e abra a playlist oficial no YouTube.</p>
+        <a class="btn btn-cyan" href="multimidia.html">Abrir Multimídia</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <strong>MathTech</strong>
+    <span>Desenvolvido por Cosme Vinicius — 2026</span>
+  </div>
+</footer>
+</body>
+</html>
