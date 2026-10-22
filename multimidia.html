@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Multimídia</title>
-<link rel="stylesheet" href="css/estilo.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Multimídia | MathTech</title>
+<link href="css/estilo.css" rel="stylesheet"/>
 </head>
 <body>
-
-<header><h1>Aulas em Vídeo</h1></header>
-
-<nav>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html">
+<span class="brand-mark">∑</span>
+<span class="brand-text">MathTech<small>Matemática &amp; Informática</small></span>
+</a>
+<nav aria-label="Navegação principal" class="site-nav">
 <a href="index.html">Início</a>
-<a href="quiz.html">Quiz</a>
+<a href="sobre.html">Projeto</a>
+<a href="sistemas.html">Sistemas</a>
+<a class="active" href="multimidia.html">Multimídia</a>
+<a href="interlab.html">Inter-Lab</a>
+<a href="cadastro.html">Cadastro</a>
 </nav>
-
-<section class="conteudo">
-<h2>Série Matemática Aplicada à Informática</h2>
-<p>Confira as aulas sobre sistemas de numeração.</p>
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/videoseries?list=PLfN8Om1CaVfU"
-title="Playlist MathTech"
-allowfullscreen></iframe>
-
+</div>
+</header>
+<section class="page-hero">
+<div class="container">
+<span class="kicker">Playlist oficial</span>
+<h1>Multimídia</h1>
+<p>Como o player do YouTube continua gerando erro localmente, a página agora exibe a thumbnail da série e direciona para a playlist oficial.</p>
+</div>
 </section>
-
+<main class="section">
+<div class="container media-layout">
+<div class="video-shell"><a aria-label="Abrir playlist da série no YouTube" class="media-thumb" href="https://youtu.be/EYyfI9s_CMM" rel="noopener noreferrer" target="_blank">
+<img alt="Capa da série Sistemas de Numeração" src="img/serie-thumb.png"/>
+</a>
+</div>
+<aside class="card playlist-info">
+<span class="kicker">Playlist oficial</span>
+<h2>Série completa</h2>
+<p>Dez aulas sequenciais sobre sistemas de numeração, conversões e operações em bases binária, octal e hexadecimal.</p>
+<div class="playlist-badges">
+<span>10 aulas</span><span>Sistemas de Numeração</span><span>MathTech</span>
+</div>
+<a class="btn btn-cyan" href="https://www.youtube.com/playlist?list=PLfN8Om1CaVfU" rel="noopener noreferrer" target="_blank">Abrir no YouTube</a>
+<p class="local-note">Assim a capa da série fica sempre visível dentro da página, mesmo quando o YouTube bloqueia o player incorporado ao abrir localmente.</p>
+</aside>
+</div>
+</main>
+<footer class="site-footer" id="rodape">
+<div class="container footer-wrap">
+<strong>MathTech</strong>
+<span>Desenvolvido por Cosme Vinicius — 2026</span>
+</div>
+</footer>
 </body>
 </html>

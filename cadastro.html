@@ -1,34 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Cadastro</title>
-<link rel="stylesheet" href="css/estilo.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cadastro | MathTech</title>
+<link href="css/estilo.css" rel="stylesheet"/>
 </head>
 <body>
-
-<header><h1>Cadastro</h1></header>
-
-<section class="conteudo">
-<form>
-
-<label>Nome:</label>
-<input type="text" required>
-
-<label>Email:</label>
-<input type="email" required>
-
-<label>Sistema favorito:</label>
-<select>
-<option>Binário</option>
-<option>Decimal</option>
-<option>Hexadecimal</option>
-</select>
-
-<button type="submit">Cadastrar</button>
-
-</form>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="index.html">
+<span class="brand-mark">∑</span>
+<span class="brand-text">MathTech<small>Matemática &amp; Informática</small></span>
+</a>
+<nav aria-label="Navegação principal" class="site-nav">
+<a href="index.html">Início</a>
+<a href="sobre.html">Projeto</a>
+<a href="sistemas.html">Sistemas</a>
+<a href="multimidia.html">Multimídia</a>
+<a href="interlab.html">Inter-Lab</a>
+<a class="active" href="cadastro.html">Cadastro</a>
+</nav>
+</div>
+</header>
+<section class="page-hero">
+<div class="container">
+<span class="kicker">Formulário HTML5</span>
+<h1>Cadastro</h1>
+<p>Preencha os campos abaixo para realizar seu cadastro no MathTech.</p>
+</div>
 </section>
+<main class="section">
+<div class="container">
+<div class="card form-card">
+<form action="#" method="post">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="grupo-cadastro"><legend>Cadastro</legend><label for="nome">Nome completo</label><input autocomplete="name" id="nome" name="nome" placeholder="Digite seu nome completo" required="" type="text"/><label for="nascimento">Data de nascimento</label><input id="nascimento" name="nascimento" required="" type="date"/><label for="email">E-mail</label><input autocomplete="email" id="email" name="email" placeholder="nome@exemplo.com" required="" type="email"/><label for="telefone">Telefone</label><input autocomplete="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required="" type="tel"/><label for="cidade">Cidade</label><input autocomplete="address-level2" id="cidade" name="cidade" placeholder="Digite sua cidade" required="" type="text"/><label for="estado">Estado</label><select id="estado" name="estado" required="">
+<option disabled="" selected="" value="">Selecione seu estado</option>
+<option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option>
+<option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+<option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option>
+<option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+<option>SP</option><option>SE</option><option>TO</option>
+</select><label for="senha">Senha</label><input autocomplete="new-password" id="senha" minlength="6" name="senha" placeholder="Crie uma senha" required="" type="password"/><label for="confirmar">Confirmar senha</label><input autocomplete="new-password" id="confirmar" minlength="6" name="confirmar" placeholder="Digite a senha novamente" required="" type="password"/><label><input required="" type="checkbox"/> Li e concordo com os termos de uso.</label><div class="actions">
+<button class="btn btn-primary" type="submit">Cadastrar</button>
+<button class="btn btn-outline" type="reset">Limpar</button>
+</div></fieldset></form>
+</div>
+</div>
+</main>
+<footer class="site-footer" id="rodape">
+<div class="container footer-wrap">
+<strong>MathTech</strong>
+<span>Desenvolvido por Cosme Vinicius — 2026</span>
+</div>
+</footer>
 </body>
 </html>
