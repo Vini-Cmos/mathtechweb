@@ -255,3 +255,85 @@ https://vini-cmos.github.io/mathtechweb/
 **Cosme Vinicius Menezes de Oliveira**
 
 Projeto desenvolvido em 2026 para a disciplina **Web Design** do curso Técnico em Desenvolvimento de Sistemas.
+
+
+## Atualizações específicas de css/estilo.css
+
+Esta seção registra as diferenças da folha de estilos da versão final em relação à versão anterior consultada na branch `master`. Ela documenta alterações existentes, sem modificar o CSS.
+
+### Padronização global
+
+- Inclusão de `margin: 0` e `padding: 0` no seletor universal, mantendo `box-sizing: border-box`.
+- Remoção global do sublinhado dos links com `text-decoration: none`.
+- Criação de `--shadow-hover` para reutilizar a sombra de destaque.
+
+### Cabeçalho e navegação
+
+- Ajuste da sombra do cabeçalho.
+- Inclusão de padding horizontal em `.nav-wrap` no layout maior.
+- Efeito de deslocamento na marca em hover.
+- Inclusão de sombra no símbolo da marca.
+- Transição de cor nos links do menu.
+- Indicador inferior animado nos links em hover e no item ativo.
+
+### Cards e botões
+
+- Inclusão de transições de transformação e sombra.
+- Deslocamento vertical de cards e botões em hover.
+- Aplicação da variável `--shadow-hover` aos cards.
+- Ajustes de tipografia e espaçamento em `.topic-card`.
+- Inclusão de estado de hover para `.btn-outline`.
+
+### Layouts
+
+- Inclusão da classe `.container-flex`, com quebra de linha e espaçamento entre componentes.
+- Inclusão de regras de distribuição dos cards e adaptações em 920px e 650px.
+- Manutenção dos layouts existentes com CSS Grid.
+
+> `.container-flex` está declarada no CSS, mas não aparece nos HTMLs da versão final. Sua inclusão não significa que os conjuntos de cards existentes tenham sido convertidos de Grid para Flexbox.
+
+### Tabelas e elementos de apoio
+
+- Inclusão de bordas arredondadas, recorte de conteúdo e sombra nas tabelas.
+- Transição e destaque das linhas em hover.
+- Inclusão de sombra nos indicadores numéricos da linha do tempo.
+- Efeito de hover nas tags.
+
+### Apresentação e multimídia
+
+- Inclusão de `pointer-events: none` na sobreposição `.hero-home::after`.
+- Efeitos de deslocamento e sombra em `.video-shell`.
+- Ampliação da imagem em hover.
+- Animação de escala e mudança de fundo no símbolo de reprodução da capa.
+
+Esses efeitos são visuais: não implementam um player de vídeo.
+
+### Formulários
+
+- Ampliação da estilização de `.form-card`, com fundo, bordas arredondadas, sombra e padding.
+- Inclusão de regras para `.form-group`, `.checkbox-group` e `.form-actions`.
+- Substituição da regra genérica de inputs por seletores específicos de texto, e-mail, telefone, senha e data, além de `select` e `textarea`.
+- Inclusão de transições de borda e sombra.
+- Ajustes de espaçamento e cursor em checkboxes e radios.
+- Regras responsivas adicionais para o cartão e as ações do formulário.
+
+> `.form-group`, `.checkbox-group` e `.form-actions` não aparecem nos HTMLs da versão final. O formulário existente utiliza `.actions`.
+
+> O campo `type="number"` do conversor ficou fora do novo bloco específico de estilização dos campos. Esta observação documenta a versão entregue; nenhuma correção foi aplicada.
+
+### Laboratório e quiz
+
+- Inclusão de bordas e efeito de hover nas caixas de resultados.
+- Ajuste do tamanho da fonte dos resultados.
+- Inclusão de bordas nos blocos das proposições.
+- Estilização adicional dos contêineres das perguntas.
+- Ajuste de espaçamento dos enunciados.
+- Transições e destaque de hover nas alternativas.
+
+### Organização e responsividade
+
+- Manutenção dos breakpoints de 920px e 650px, com regras adicionais para as novas classes.
+- Remoção de comentários explicativos da versão anterior.
+- Alterações de indentação e espaços em branco em grande parte do arquivo.
+
+Nem toda linha alterada no diff representa uma mudança visual. As alterações documentadas foram identificadas por leitura do código, sem testes completos de renderização em diferentes navegadores e dispositivos.
